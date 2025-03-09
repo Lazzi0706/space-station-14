@@ -15,7 +15,7 @@ public sealed partial class AttachablesContainerComponent : Component
     public EntityUid? ActiveSlot;
 
     [DataField]
-    public EntProtoId ToggleAction = "ActionToggleAttachablesMenu";
+    public EntProtoId ToggleAction = "ActionAttachablesContainer";
 
     [DataField]
     public EntityUid? ToggleActionEntity;

@@ -7,7 +7,7 @@ public sealed class AttachablesContainerBoundUserInterface : BoundUserInterface
 {
     private AttachablesContainerMenu? _menu;
 
-    public AttachablesContainerBoundUserInterface(EntityUid owner, Enum uiKey) : base (owner, uiKey)
+    public AttachablesContainerBoundUserInterface(EntityUid owner, Enum uiKey) : base(owner, uiKey)
     {
         IoCManager.InjectDependencies(this);
     }

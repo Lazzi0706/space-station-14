@@ -1,6 +1,6 @@
 - type: entity
-  id: ActionToggleAttachablesMenu
-  name: Idk
+  id: ActionAttachablesContainer
+  name: UwU
   components:
   - type: InstantAction
     itemIconStyle: BigItem

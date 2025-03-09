@@ -1,15 +1,13 @@
 
-
-using Robust.Shared.Prototypes;
-
 namespace Content.Shared.SS220.Attachables;
 
-public abstract partial class AttachableComponent : Component
+[RegisterComponent]
+public sealed partial class AttachableComponent : Component
 {
     [DataField]
-    public float AttachDelay;
+    public float AttachDelay = 1.5f;
 
     [DataField]
-    public float DeattachDelay;
+    public float DeattachDelay = 1.5f;
 
 }
