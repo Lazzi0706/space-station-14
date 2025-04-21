@@ -628,6 +628,30 @@
 - type: Tag
   id: GrenadeFlashBang
 
+# SS220 Attachables begin
+
+# Rifle
+- type: Tag
+  id: GunMuzzleAttachment
+
+- type: Tag
+  id: GunUnderbarrelAttachment
+
+- type: Tag
+  id: GunRailAttachment
+
+- type: Tag
+  id: GunStockAttachment
+
+# Salvage
+
+- type: Tag
+  id: GunKAMuzzleAttachment
+
+- type: Tag
+  id: GunKAUnderbarrelAttachment
+
+# SS220 Attachables end
 - type: Tag
   id: HudMedical
 

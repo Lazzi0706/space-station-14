@@ -1,0 +1,85 @@
+# Base
+
+- type: entity
+  id: BaseGunAttachable
+  abstract: true
+  components:
+  - type: GunAttachablesContainer
+    slots:
+      gun_muzzle_slot:
+        name: Muzzle
+        whitelist:
+          tags:
+            - GunMuzzleAttachment
+      gun_underbarrel_slot:
+        name: Underbarrel
+        whitelist:
+          tags:
+            - GunUnderbarrelAttachment
+      gun_rail_slot:
+        name: Rail
+        whitelist:
+          tags:
+            - GunRailAttachment
+      gun_stock_stock:
+        name: Stock
+        whitelist:
+          tags:
+            - GunStockAttachment
+
+# Base attachents
+
+- type: entity
+  parent: BaseItem
+  id: BaseGunAttachment
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/skub.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/skub.rsi
+  - type: GunAttachment
+
+# Muzzle
+
+- type: entity
+  parent: BaseGunAttachment
+  id: GunAttachmentAdvancedBulletAccelerator
+  name: advanced bullet accelerator
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/skub.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/skub.rsi
+  - type: GunAttachment
+    gunBonusModifier:
+      projectileSpeed: 1.5
+  - type: Tag
+    tags:
+      - GunMuzzleAttachment
+
+# Underbarrel
+
+- type: entity
+  parent: BaseGunAttachment
+  id: GunAttachmentAdvancedStabilizator
+  name: advanced stabilizator
+  components:
+  - type: Sprite
+    sprite: Objects/Misc/skub.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Misc/skub.rsi
+  - type: GunAttachment
+    gunBonusModifier:
+      minAngle: -0.50
+      maxAngle: -0.60
+  - type: Tag
+    tags:
+      - GunUnderbarrelAttachment
+
+# Rail
+
+# Stock

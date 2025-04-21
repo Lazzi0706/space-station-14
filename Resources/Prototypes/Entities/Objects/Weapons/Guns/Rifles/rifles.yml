@@ -1,6 +1,6 @@
 - type: entity
   name: BaseWeaponRifle
-  parent: [BaseItem, BaseGunWieldable]
+  parent: [BaseItem, BaseGunWieldable, BaseGunAttachable]
   id: BaseWeaponRifle
   description: A rooty tooty point and shooty.
   abstract: true
@@ -55,6 +55,12 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+      # SS220 Attachables begin
+      gun_muzzle_slot: !type:ContainerSlot
+      gun_underbarrel_slot: !type:ContainerSlot
+      gun_rail_slot: !type:ContainerSlot
+      gun_stock_stock: !type:ContainerSlot
+      # SS220 Attachables end
   - type: StaticPrice
     price: 500
 
